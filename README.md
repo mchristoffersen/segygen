@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6302518.svg)](https://doi.org/10.5281/zenodo.6302518)  
 # segygen
 Python SEG-Y Generator
 
