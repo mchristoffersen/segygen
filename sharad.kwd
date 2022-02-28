@@ -1,0 +1,18 @@
+# Self describing ascii <Segy Header Keyword File>
+
+struct HeaderWord {
+    Name Header Byte Type Scale
+}
+
+struct HeaderString {
+    Name Header Byte Size Type
+}
+
+HeaderWord "Num Samples" File 20 16BitInteger 1
+HeaderString "Line Name" EBCDIC 0 10 ASCII
+HeaderWord "Trace Sequence Number" Trace 0 32BitInteger 1
+HeaderWord "CDP Number" Trace 20 32BitInteger 1
+HeaderWord "Num Samples" Trace 114 16BitInteger 1
+HeaderWord "Shot Sequence Number" Trace 8 32BitInteger 1
+HeaderWord "Coordinate X" Trace 180 32BitInteger .0001
+HeaderWord "Coordinate Y" Trace 184 32BitInteger .0001
